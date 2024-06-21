@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atende Facil - Painel 01</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0a4b7e;
+        }
+
+        .btn {
+            font-size: 3rem;
+            width: 100%;
+            text-transform: uppercase;
+        }
+
+        .btn-outline-success {
+            width: auto;
+            font-size: 1rem;
+        }
+
+        .btn-balcao {
+            background-color: #e3e5e4;
+            color: #636268;
+        }
+
+        .btn-senha {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .row {
+            padding-bottom: 5px;
+        }
+
+        marquee {
+            font-size: 4rem;
+            color: #fff;
+        }
+
+        .primeira-linha .btn-group .btn {
+            font-size: 1rem;
+            color: #fff;
+        }
+
+        .primeira-linha .col-4 {
+            display: flex;
+            align-items: end;
+        }
+
+        .primeira-linha .col-8 .btn {
+            color: #fff;
+        }
+
+        @media (min-width: 576px) {
+            .img {
+                min-width: fit-content;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">ATENDEFACIL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Cadastros
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cadastro_operadores.html">Cadastro de atendentes</a></li>
+                            <li><a class="dropdown-item" href="cadastro_tipo_senha.html">Cadastro de tipo de senha</a>
+                            </li>
+                            <li><a class="dropdown-item" href="cadastro_guiche.html">Cadastro de guichês</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Relatórios
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="relatorio_atendimentos.html">Relatórios de
+                                    atendimentos</a></li>
+                            <li><a class="dropdown-item" href="fila_atendimentos.html">Fila de Atendimentos</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="painel01.html">Painel 01</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="painel02.html">Painel 02</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+                </form>
+
+
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+
+        <div class="row primeira-linha">
+            <div class="col-8">
+                <button type="button" class="btn">ATENDEFACIL</button>
+            </div>
+            <div class="col-4">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn">Balcão</button>
+                    <button type="button" class="btn">Número</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-8">
+                <button type="button" class="btn btn-danger">Atendimento Geral</button>
+            </div>
+            <div class="col-4">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-balcao">A</button>
+                    <button type="button" class="btn btn-senha">B</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-8">
+                <button type="button" class="btn btn-success">Trocas e Devoluçoes</button>
+            </div>
+            <div class="col-4">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-balcao">B</button>
+                    <button type="button" class="btn btn-senha">172</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-8">
+                <button type="button" class="btn btn-primary">Serviços Financeiros</button>
+            </div>
+            <div class="col-4">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-balcao">C</button>
+                    <button type="button" class="btn btn-senha">171</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-8">
+                <button type="button" class="btn btn-warning">Apoio Técnico</button>
+            </div>
+            <div class="col-4">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-balcao">D</button>
+                    <button type="button" class="btn btn-senha">157</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <marquee>AGUARDE SUA SENHA SER CHAMADA!</marquee>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

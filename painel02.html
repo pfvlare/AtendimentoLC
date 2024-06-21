@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atende Facil - Painel 02</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <style>
+       body{
+        background-color: #463b3b;
+       }
+       #segunda-linha{
+        background-color: #ff0000;
+        font-size: 40px;
+        text-transform: uppercase;
+        border-radius: 35px;
+       }
+
+       #col-cidade{
+        color: #fff;
+        font-size: 45px;
+       }
+       #col-cidade .cidade{
+            font-size: 15px;
+       }
+       .linha-informacoes{
+        padding: 5px;
+       }
+
+       #col-icone-temperatura{
+        color: #fff;
+        font-size: 65px;
+       }
+       #informacao-data{
+        font-size: 35px;
+        color: #fff;
+        border-left: #fff 1px solid;
+        text-align: center;
+       }
+       #informacao-data .row{
+        justify-content: center;
+       }
+       .btn-balcao{
+        background-color: #0003cc;
+       }
+       .btn-tipo-atendimento{
+        background-color: #fff;
+        width: 200px;
+       }
+       .btn-senha{
+        background-color: #ff0000;
+        border: #fff 7px solid;
+        border-radius: 35px;
+       }
+       .btn-group{
+        height: 60px;
+        margin: 5px;
+        display: flex;
+        align-items: stretch;
+       }
+       .btn-group i{
+        width: auto;
+       }
+       .btn-group2{
+        height: 30px;
+       }
+       .btn-group2 .btn{
+        color: #fff;
+       }
+       #container-nav{
+        margin-top: 5px;
+       }
+       .btn-outline-sucess{
+        font-size: 1rem;
+        width: auto;
+       }
+       img{
+        object-fit: contain;
+        max-width: 100%;
+        width: 400px;
+        height: 400px;
+       }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">ATENDEFACIL</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+  
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cadastros
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="cadastro_operadores.html">Cadastro de atendentes</a></li>
+                  <li><a class="dropdown-item" href="cadastro_tipo_senha.html">Cadastro de tipo de senha</a></li>
+                  <li><a class="dropdown-item" href="cadastro_guiche.html">Cadastro de guichês</a></li>
+                </ul>
+              </li>
+  
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Relatórios
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="relatorio_atendimentos.html">Relatórios de atendimentos</a></li>
+                  <li><a class="dropdown-item" href="fila_atendimentos.html">Fila de Atendimentos</a></li>
+                </ul>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="painel01.html">Painel 01</a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="painel02.html">Painel 02</a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+              </li>
+  
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+            </form>
+  
+  
+          </div>
+        </div>
+      </nav>
+      
+
+    <div class="container-fluid" id="container-nav">
+
+        <div class="row">
+            <div class="col-8">
+
+                <div class="row">
+                    <video controls autoplay muted loop>
+                        <source src="./Bring Me The Horizon -sTraNgeRs.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+
+            <div class="row linha-informacoes">
+                <div class="col" id="col-cidade">
+                    <div class="row cidade">Brasília</div>
+                    <div class="row">28º</div>
+                </div>
+
+                <div class="col" id="col-icone-temperatura">
+                    <i class="bi bi-cloud-sun"></i>
+                </div>
+
+                <div class="col" id="informacao-data">
+                    <div class="row">12/12/2012</div>
+                    <div class="row">12:12:12</div>
+                </div>
+
+            </div>
+
+            </div>
+
+            <div class="col-4">
+
+                <div class="row" id="imagem">
+                <img src="./img/ATENDE.png" class="rounded-circle" alt="...">
+                </div>
+
+                <div class="btn-group btn-group2" role="group" aria-label="Basic example">
+                    <button type="button" class="btn ">Senha</button>
+                    <button type="button" class="btn ">Atendimento </button>
+                    <button type="button" class="btn ">Balcão</button>
+                  </div>
+
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary btn-senha">A 023</button>
+                    <button type="button" class="btn btn-tipo-atendimento">
+                        <div class="row">Atendimento a Larissa</div>
+                        <div class="row">Normal<i class="bi bi-person-vcard"></i></div>
+                    </button>
+                    <button type="button" class="btn btn-primary btn-balcao">1</button>
+                  </div>
+
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary btn-senha">B 023</button>
+                    <button type="button" class="btn btn-tipo-atendimento">
+                        <div class="row">Atendimento Prioritário</div>
+                        <div class="row">Normal<i class="bi bi-postcard-heart"></i></div>
+                    </button>
+                    <button type="button" class="btn btn-primary btn-balcao">2</button>
+                  </div>
+
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary btn-senha">C 023</button>
+                    <button type="button" class="btn btn-tipo-atendimento">
+                        <div class="row">Atendimento Geral</div>
+                        <div class="row">Normal<i class="bi bi-person-vcard"></i></div>
+                    </button>
+                    <button type="button" class="btn btn-primary btn-balcao">3</button>
+                  </div>
+
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary btn-senha">D 023</button>
+                    <button type="button" class="btn btn-tipo-atendimento">
+                        <div class="row">Atendimento ao Municipio</div>
+                        <div class="row">Prioritário<i class="bi bi-postcard-heart"></i></div>
+                    </button>
+                    <button type="button" class="btn btn-primary btn-balcao">5</button>
+                  </div>
+
+            </div>
+
+        </div>
+
+        <div class="row" id="segunda-linha">
+            <marquee>AGUARDE SER CHAMADO!</marquee>
+        </div>
+        
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

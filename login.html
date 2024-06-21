@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AtendeFacil - Login</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .vr {
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">ATENDEFACIL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cadastros
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="cadastro_operadores.html">Cadastro de atendentes</a></li>
+              <li><a class="dropdown-item" href="cadastro_tipo_senha.html">Cadastro de tipo de senha</a></li>
+              <li><a class="dropdown-item" href="cadastro_guiche.html">Cadastro de guichês</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Relatórios
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="relatorio_atendimentos.html">Relatórios de atendimentos</a></li>
+              <li><a class="dropdown-item" href="fila_atendimentos.html">Fila de Atendimentos</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="painel01.html">Painel 01</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="painel02.html">Painel 02</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">BUSCAR</i></button>
+        </form>
+
+
+      </div>
+    </div>
+  </nav>
+  <br>
+  <h1>AtendeFacil - Sistema de Atendimento</h1>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-7">
+        <img src="./Login.png">
+      </div>
+
+    
+
+    <div class="vr"></div>
+
+    <form class="col-4">
+      <h3>LOGIN</h3>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">Nunca compartilhe sua senha com outras pessoas.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Lembrar-me</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+    </div>
+  
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

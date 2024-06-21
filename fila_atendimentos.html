@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AtendeFacil - Fila de Atendimentos</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <style>
+   .container .card{
+    max-width: 250px;
+    float: left;
+    margin: 5px;
+   }  
+   .col-6{
+    padding: 0;
+   }
+    </style>
+
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">ATENDEFACIL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cadastros
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="cadastro_operadores.html">Cadastro de atendentes</a></li>
+                <li><a class="dropdown-item" href="cadastro_tipo_senha.html">Cadastro de tipo de senha</a></li>
+                <li><a class="dropdown-item" href="cadastro_guiche.html">Cadastro de guichês</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Relatórios
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="relatorio_atendimentos.html">Relatórios de atendimentos</a></li>
+                <li><a class="dropdown-item" href="fila_atendimentos.html">Fila de Atendimentos</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="painel01.html">Painel 01</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="painel02.html">Painel 02</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+            </li>
+
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+          </form>
+
+
+        </div>
+      </div>
+    </nav>
+    <br>
+
+
+
+
+    <div class="container">
+
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Atendimento Prioritario
+            </button>
+          </h2>
+          <div class="d-flex justify-content-center">
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+
+              <div class="card text-center">
+                <div class="card-header">
+                  Larissa Campos
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">#606</h5>
+                  <p class="card-text">Atendimento Energia Eletrica</p>
+                  <div class="row">
+                    <div class="col-6"><a href="#" class="btn btn-outline-primary">Chamar</a></div>
+                    <div class="col-6"><a data-bs-toggle="modal" data-bs-target="#ModalExclusao" class="btn btn-outline-danger">Excluir</a></div>
+                  </div>
+                </div>
+                <div class="card-footer text-body-secondary">
+                  <a class="btn btn-outline-warning" data-bs-toggle="collapse" href="#MaisInformacao1" role="button" aria-expanded="false" aria-controls="collapseExample">+INFO</a>
+
+                  <div class="collapse" id="MaisInformacao1">
+                    <div class="card card-body">
+                     <p>Data de Entrada: 12/12/2015</p>
+                     <p>Hora de Entrada: 12:12</p>
+                     <p>Previsão de Saída: 12/12/2012 16:00 </p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="card text-center">
+                <div class="card-header">
+                  MARIA JOANA
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">#706</h5>
+                  <p class="card-text">Atendimento Energia Eletrica</p>
+                  <div class="row">
+                    <div class="col-6"><a href="#" class="btn btn-outline-primary">Chamar</a></div>
+                    <div class="col-6"><a data-bs-toggle="modal" data-bs-target="#ModalExclusao" class="btn btn-outline-danger">Excluir</a></div>
+                  </div>
+                </div>
+                <div class="card-footer text-body-secondary">
+                  <a class="btn btn-outline-warning" data-bs-toggle="collapse" href="#MaisInformacao2" role="button" aria-expanded="false" aria-controls="collapseExample">+INFO</a>
+
+                  <div class="collapse" id="MaisInformacao2">
+                    <div class="card card-body">
+                     <p>Data de Entrada: 12/12/2012</p>
+                     <p>Hora de Entrada: 12:12</p>
+                     <p>Previsão de Saída: 12/12/2012 16:00 </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card text-center">
+                <div class="card-header">
+                  FLAVIO SANTOS
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">#806</h5>
+                  <p class="card-text">Atendimento Energia Eletrica</p>
+                  <div class="row">
+                    <div class="col-6"><a href="#" class="btn btn-outline-primary">Chamar</a></div>
+                    <div class="col-6"><a data-bs-toggle="modal" data-bs-target="#ModalExclusao" class="btn btn-outline-danger">Excluir</a></div>
+                  </div>
+                </div>
+                <div class="card-footer text-body-secondary">
+                  <a class="btn btn-outline-warning" data-bs-toggle="collapse" href="#MaisInformacao3" role="button" aria-expanded="false" aria-controls="collapseExample">+INFO</a>
+                  <div class="collapse" id="MaisInformacao3">
+                    <div class="card card-body">
+                     <p>Data de Entrada: 12/12/2012</p>
+                     <p>Hora de Entrada: 12:12</p>
+                     <p>Previsão de Saída: 12/12/2012 16:00 </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Atendimento Normal
+            </button>
+          </h2>
+          <div class="d-flex justify-content-center">
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+
+              <div class="card text-center">
+                <div class="card-header">
+                  JOAQUIM DA SILVA
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">#605</h5>
+                  <p class="card-text">Atendimento Energia Eletrica</p>
+                  <div class="row">
+                    <div class="col-6"><a href="#" class="btn btn-outline-primary">Chamar</a></div>
+                    <div class="col-6"><a data-bs-toggle="modal" data-bs-target="#ModalExclusao" class="btn btn-outline-danger">Excluir</a></div>
+                  </div>
+                </div>
+                <div class="card-footer text-body-secondary">
+                  <a class="btn btn-outline-warning" data-bs-toggle="collapse" href="#MaisInformacao4" role="button" aria-expanded="false" aria-controls="collapseExample">+INFO</a>
+                  <div class="collapse" id="MaisInformacao4">
+                    <div class="card card-body">
+                     <p>Data de Entrada: 12/12/2012</p>
+                     <p>Hora de Entrada: 12:12</p>
+                     <p>Previsão de Saída: 12/12/2012 16:00 </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card text-center">
+                <div class="card-header">
+                  FLAVIO SANTOS
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">#805</h5>
+                  <p class="card-text">Atendimento Energia Eletrica</p>
+                  <div class="row">
+                    <div class="col-6"><a href="#" class="btn btn-outline-primary">Chamar</a></div>
+                    <div class="col-6"><a data-bs-toggle="modal" data-bs-target="#ModalExclusao" class="btn btn-outline-danger">Excluir</a></div>
+                  </div>
+                </div>
+                <div class="card-footer text-body-secondary">
+                  <a class="btn btn-outline-warning" data-bs-toggle="collapse" href="#MaisInformacao5" role="button" aria-expanded="false" aria-controls="collapseExample">+INFO</a>
+
+                  <div class="collapse" id="MaisInformacao5">
+                    <div class="card card-body">
+                     <p>Data de Entrada: 12/12/2012</p>
+                     <p>Hora de Entrada: 12:12</p>
+                     <p>Previsão de Saída: 12/12/2012 16:00 </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card text-center">
+                <div class="card-header">
+                  MARIA JOANA
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">#705</h5>
+                  <p class="card-text">Atendimento Energia Eletrica</p>
+                  <div class="row">
+                    <div class="col-6"><a href="#" class="btn btn-outline-primary">Chamar</a></div>
+                    <div class="col-6"><a data-bs-toggle="modal" data-bs-target="#ModalExclusao" class="btn btn-outline-danger">Excluir</a></div>
+                  </div>
+                </div>
+                <div class="card-footer text-body-secondary">
+                  <a class="btn btn-outline-warning" data-bs-toggle="collapse" href="#MaisInformacao6" role="button" aria-expanded="false" aria-controls="collapseExample">+INFO</a>
+                  <div class="collapse" id="MaisInformacao6">
+                    <div class="card card-body">
+                     <p>Data de Entrada: 12/12/2012</p>
+                     <p>Hora de Entrada: 12:12</p>
+                     <p>Previsão de Saída: 12/12/2012 16:00 </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Atendimento Extra Quadro
+            </button>
+          </h2>
+          <div class="d-flex justify-content-center">
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+
+              <div class="card text-center">
+                <div class="card-header">
+                  JOAQUIM DA SILVA
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">#604</h5>
+                  <p class="card-text">Atendimento Energia Eletrica</p>
+                  <div class="row">
+                    <div class="col-6"><a href="#" class="btn btn-outline-primary">Chamar</a></div>
+                    <div class="col-6"><a data-bs-toggle="modal" data-bs-target="#ModalExclusao" class="btn btn-outline-danger">Excluir</a></div>
+                  </div>
+                </div>
+                <div class="card-footer text-body-secondary">
+                  <a class="btn btn-outline-warning" data-bs-toggle="collapse" href="#MaisInformacao7" role="button" aria-expanded="false" aria-controls="collapseExample">+INFO</a>
+                  <div class="collapse" id="MaisInformacao7">
+                    <div class="card card-body">
+                     <p>Data de Entrada: 12/12/2012</p>
+                     <p>Hora de Entrada: 12:12</p>
+                     <p>Previsão de Saída: 12/12/2012 16:00 </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card text-center">
+                <div class="card-header">
+                  MARIA JOANA
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">#704</h5>
+                  <p class="card-text">Atendimento Energia Eletrica</p>
+                  <div class="row">
+                    <div class="col-6"><a href="#" class="btn btn-outline-primary">Chamar</a></div>
+                    <div class="col-6"><a data-bs-toggle="modal" data-bs-target="#ModalExclusao" class="btn btn-outline-danger">Excluir</a></div>
+                  </div>
+                </div>
+                <div class="card-footer text-body-secondary">
+                  <a class="btn btn-outline-warning" data-bs-toggle="collapse" href="#MaisInformacao8" role="button" aria-expanded="false" aria-controls="collapseExample">+INFO</a>
+                  <div class="collapse" id="MaisInformacao8">
+                    <div class="card card-body">
+                      <p>Data de Entrada: 12/12/2012</p>
+                     <p>Hora de Entrada: 12:12</p>
+                     <p>Previsão de Saída: 12/12/2012 16:00 </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card text-center">
+                <div class="card-header">
+                  FLAVIO SANTOS
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">#804</h5>
+                  <p class="card-text">Atendimento Energia Eletrica</p>
+                  <div class="row">
+                    <div class="col-6"><a href="#" class="btn btn-outline-primary">Chamar</a></div>
+                    <div class="col-6"><a data-bs-toggle="modal" data-bs-target="#ModalExclusao" class="btn btn-outline-danger">Excluir</a></div>
+                  </div>
+                </div>
+                <div class="card-footer text-body-secondary">
+                  <a class="btn btn-outline-warning" data-bs-toggle="collapse" href="#MaisInformacao9" role="button" aria-expanded="false" aria-controls="collapseExample">+INFO</a>
+
+                  <div class="collapse" id="MaisInformacao9">
+                    <div class="card card-body">
+                      <p>Data de Entrada: 12/12/2012</p>
+                      <p>Hora de Entrada: 12:12</p>
+                      <p>Previsão de Saída: 12/12/2012 16:00 </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+
+    </div>
+  
+    <br>
+
+    <div class="btn-toolbar container text-center" role="toolbar" aria-label="Toolbar with button groups">
+      <div class="btn-group me-2" role="group" aria-label="First group">
+        <button type="button" class="btn btn-outline-primary">Voltar</button>
+        <button type="button" class="btn btn-outline-primary">1</button>
+        <button type="button" class="btn btn-outline-primary">2</button>
+        <button type="button" class="btn btn-outline-primary">3</button>
+        <button type="button" class="btn btn-outline-primary">4</button>
+        <button type="button" class="btn btn-outline-primary">Próxima</button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+<div class="modal fade" id="ModalExclusao" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ModalExclusao" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Atenção</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Deseja Excluir esse atendimento?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+        <button type="button" class="btn btn-primary">Sim</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
